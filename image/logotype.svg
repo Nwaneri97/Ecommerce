@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="30" viewBox="0 0 110 30">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 7.303px;
+        fill: #d32f2f;
+        font-family: "Nunito Sans";
+        font-weight: 600;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <text id="JUMPBOX" class="cls-1" transform="matrix(2.622, 0, 0, 2.622, 8.872, 20.529)">JUMPBOX</text>
+</svg>

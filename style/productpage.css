@@ -1,0 +1,163 @@
+
+.product-body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  background:#fff; 
+}
+
+.product-container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 880px;
+  height: 600px;
+  background:#d32f2f;
+  margin: 20px; 
+  border-radius: 10px;
+
+}
+
+.imgBox{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #eee;
+
+}
+
+.product-container .imgBox::before{
+  content: 'Nike';
+  position: absolute;
+  top:20px;
+  left:20px;
+  color:#000;
+  opacity: 0.1;
+  font-size: 9em;
+  letter-spacing: -10px;
+  font-weight: 1000px; 
+}
+
+
+.product-container .imgBox img{
+  position: relative;
+  width: 700px;
+  transform: rotate(-30deg);
+  left: -50px;
+}
+
+.product-container .imgBox img:hover{
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+}
+
+.product-container .details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 60px;
+}
+
+.product-container .details h3{
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 0.6em;
+  color: #fff;
+  font-weight: 700;
+
+}
+
+.product-container .details h3 span{
+  text-transform: uppercase;
+  font-size: 0.4em;
+  letter-spacing: 2px;
+  color:#000;
+
+}
+
+.product-container .details p{
+  max-width: 85%;
+  margin-top: 6%;
+  margin-left: 13%;
+  margin-bottom: 40px;
+  color: #e8e8e8;
+  font-size: 15px;
+  text-align: right;
+
+}
+
+
+.product-container .details h4{
+  margin-top: 8px;
+  padding: 0px;
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-style:italic;
+  float:left;
+  color: #fff;
+
+}
+
+
+.product-container .details button{
+  background-color: #000;
+  color: #d32f2f;
+  border: none;
+  outline: none;
+  padding: 13px;
+  margin-right: 5px;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+
+}
+
+
+@media (max-width: 1080px){
+  .product-container{
+    height: auto;
+  }
+
+  .product-container .imgBox{
+    padding: 40px;
+    box-sizing: border-box;
+    width:100% !important;
+
+  }
+
+  .product-container .imgBox img{
+    left: initial;
+    max-width:100%;
+    transform: rotate(0deg); 
+  }
+
+  .details{
+    width: 100% !important;
+    height: auto;
+    padding: 20px;
+  }
+
+  .product-container .details p{
+    max-width:100%;
+    text-align:left;
+    margin-left: 0;
+
+
+  }
+
+}
